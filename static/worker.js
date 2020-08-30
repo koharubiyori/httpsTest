@@ -1,0 +1,1 @@
+self.addEventListener("install",(function(e){console.log("install")})),self.addEventListener("fetch",(function(e){console.log(e),e.respondWith(new Promise(e=>e(123)))}));
