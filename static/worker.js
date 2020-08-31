@@ -1,1 +1,1 @@
-self.addEventListener("install",(function(e){console.log("install")})),self.addEventListener("fetch",(function(e){console.log(e),e.respondWith(new Promise(e=>e(123)))}));
+self.addEventListener("install",(function(n){console.log("install"),n.waitUntil(caches.open("v1").then((function(n){return n.addAll(["/static/mmd/kizunaai/eye.png","/static/mmd/kizunaai/eye2.png"])})))})),self.addEventListener("fetch",(function(n){console.log(n),n.respondWith(new Promise(n=>n(123)))}));
